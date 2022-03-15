@@ -176,33 +176,76 @@ body {
 }
 
 /* footer links */
-.footer-left {
-  display: inline-block;
-  vertical-align: center;
-}
-.footer-links {
-  color: #ffffff;
 
-  padding: 0;
+.bg-footer {
+  padding: 50px 0 30px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
-.footer-links a {
-  display: inline-block;
-  line-height: 1.8;
-  font-weight: 400;
-  text-decoration: none;
-  color: inherit;
+.footer-heading {
+  letter-spacing: 2px;
 }
-.footer-links a:before {
-  content: "|";
-  font-weight: 300;
-  font-size: 20px;
-  /* left: 20px; */
-  color: #fff;
-  display: inline-block;
-  /* padding-right: 5px; */
-  margin-left: 20px;
-  margin-right: 20px;
+
+.footer-link a {
+  color: white;
+  line-height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
 }
-.footer-links .link-1:before {
-  content: none;
+
+.footer-link a:hover {
+  color: #1bbc9b;
+}
+
+.contact-info {
+  color: white;
+  font-size: 14px;
+}
+
+.footer-social-icon {
+  font-size: 15px;
+  height: 34px;
+  width: 34px;
+  line-height: 34px;
+  border-radius: 3px;
+  text-align: center;
+display: inline-block;
+}
+.linkedin {
+  background-color: #4e71a8;
+  color: #ffffff;
+}
+.twitter {
+  background-color: #55acee;
+  color: #ffffff;
+}
+.google {
+  background-color: #d6492f;
+  color: #ffffff;
+}
+
+.github {
+  background-color: #424041;
+  color: #ffffff;
+}
+.footer-alt {
+  /* color: #acacac; */
+  color: white;
+}
+
+.footer-heading {
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer-heading:after {
+  content: '';
+  width: 25px;
+  border-bottom: 1px solid #FFF;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  border-bottom: 1px solid #1bbc9b;
 }
