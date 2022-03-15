@@ -138,7 +138,6 @@ img#flag {
   bottom: 25px;
   right: 25px;
   display: none;
-  background-color: chartreuse;
 }
 
 /* Flip Cards CSS */
@@ -244,51 +243,77 @@ img#flag {
 
 
 /* footer links */
- .footer-left{
-	display: inline-block;
-	vertical-align: center;
-}
- .footer-links{
-	color:  #ffffff;
 
-	padding: 0;
+.bg-footer {
+  background-color: black;
+  padding: 50px 0 30px;
 }
- .footer-links a{
-	display:inline-block;
-	line-height: 1.8;
-  font-weight:400;
-	text-decoration: none;
-	color:  inherit;
-} 
- .footer-links a:before {
-  content: "|";
-  font-weight:300;
-  font-size: 20px;
-  /* left: 20px; */ 
-  color: #fff;
+
+.footer-heading {
+  letter-spacing: 2px;
+}
+
+.footer-link a {
+  color: white;
+  line-height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+
+.footer-link a:hover {
+  color: #1bbc9b;
+}
+
+.contact-info {
+  color: white;
+  font-size: 14px;
+}
+
+.footer-social-icon {
+  font-size: 15px;
+  height: 34px;
+  width: 34px;
+  line-height: 34px;
+  border-radius: 3px;
+  text-align: center;
   display: inline-block;
-  /* padding-right: 5px; */ 
-  margin-left: 20px;
-  margin-right: 20px; 
 }
- .footer-links .link-1:before {
-  content: none;
+.linkedin {
+  background-color: #4e71a8;
+  color: #ffffff;
+}
+.twitter {
+  background-color: #55acee;
+  color: #ffffff;
+}
+.google {
+  background-color: #d6492f;
+  color: #ffffff;
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar{
-  width: 12px;
+.github {
+  background-color: #424041;
+  color: #ffffff;
 }
-::-webkit-scrollbar-thumb{
-  background: -webkit-linear-gradient(transparent, #00c6ff);
-  border-radius: 6px;
+.footer-alt {
+  /* color: #acacac; */
+  color: white;
 }
-::-webkit-scrollbar-thumb:hover{
-  background: -webkit-linear-gradient(transparent, #eee01d);
-  border-radius: 6px;
+
+.footer-heading {
+  position: relative;
+  padding-bottom: 12px;
 }
-::-webkit-scrollbar-track{
-  background: #6c63ff;
+
+.footer-heading:after {
+  content: '';
+  width: 25px;
+  border-bottom: 1px solid #FFF;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  border-bottom: 1px solid #1bbc9b;
 }
 
 /* contact us */
@@ -380,4 +405,3 @@ img#flag {
     padding:50px 50px;
   }
 }
-
