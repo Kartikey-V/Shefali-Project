@@ -23,7 +23,7 @@ function adClass(x, str){
 }
 
 
-// Scrolll TO Top
+// Scroll TO Top
 $(document).ready(function(){
 	$(window).scroll(function () {
 			if ($(this).scrollTop() > 50) {
@@ -41,6 +41,7 @@ $(document).ready(function(){
 		});
 });
 
+// Contact Tag
 $(document).ready(function(){
 	$('.toggle').click(function(){
 	  $('.sidebar-contact').toggleClass('active')
