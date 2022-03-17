@@ -1,87 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="twitter:dnt" content="on" />
-    <!-- =======================Fontaswome================ -->
-    <script
-      src="https://kit.fontawesome.com/f6c4fb9568.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Home Page</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="index.js"></script>
-  </head>
 
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
-      <div class="container">
-        <a href="#" class="navbar-brand">COVID-19 Prediction</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="twitter:dnt" content="on" />
+  <!-- =======================Fontaswome================ -->
+  <script src="https://kit.fontawesome.com/f6c4fb9568.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Home Page</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="index.js"></script>
+</head>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navmenu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+    <div class="container">
+      <a href="#" class="navbar-brand">COVID-19 Prediction</a>
 
-        <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a href="#stats" class="nav-link">Live Stats</a>
-            </li>
-            <li class="nav-item">
-              <a href="#abt-project" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#carouselExampleIndicators" class="nav-link">Live Tweets</a>
-            </li>
-            <li class="nav-item">
-              <a href="#developers" class="nav-link">Our Team</a>
-            </li>
-            <li class="nav-item">
-              <a href="#faq" class="nav-link">FAQs</a>
-            </li>
-          </ul>
-        </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#stats" class="nav-link">Live Stats</a>
+          </li>
+          <li class="nav-item">
+            <a href="#abt-project" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#carouselExampleIndicators" class="nav-link">Live Tweets</a>
+          </li>
+          <li class="nav-item">
+            <a href="#developers" class="nav-link">Our Team</a>
+          </li>
+          <li class="nav-item">
+            <a href="#faq" class="nav-link">FAQs</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- Showcase -->
-    <section class="text-light p-5 text-center area">
-      <ul class="circles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-   
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <div class="container context text-center">
-        <div >
-          <div>
-            <h1>
+  <!-- Showcase -->
+  <section class="text-light p-5 text-center area">
+
+    <div class="container context text-center">
+      <div>
+        <div>
+          <!-- <h1>
               COVID-19 Prediction
               <span class="text-warning">just became EASIER!! </span>
             </h1>
@@ -90,494 +64,428 @@
               advanced ResNet-18 Model!
             </p>
             <a href="predict.html" class="btn btn-primary btn-lg">
-              Predict Now
-            </a>
-          </div>
-          <!-- <img
+              Predict Now -->
+          </a>
+        </div>
+        <!-- <img
             class="img-fluid w-50 d-none d-sm-block"
             src="img/undraw_medical.svg"
             alt=""
           /> -->
-        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Covid Stats -->
-    <section id="stats" class="p-5">      
-      <div class="container">        
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-4">
-            <div class="list-group">
-              <a class=" mya list-group-item total-case">
-                <h3 class="pull-right"><i class="myfa fa fa-eye"></i></h3>
-                <h4 class="list-group-item-heading count" id="total"></h4>
-                <p class="list-group-item-text">Total Cases</p>
-              </a>
+  <!-- Covid Stats -->
+  <section id="stats" class="p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-4">
+          <div class="list-group">
+            <a class=" mya list-group-item total-case">
+              <h3 class="pull-right"><i class="myfa fa fa-eye"></i></h3>
+              <h4 class="list-group-item-heading count" id="total"></h4>
+              <p class="list-group-item-text">Total Cases</p>
+            </a>
 
-              <a class=" mya list-group-item active-case">
-                <h3 class="pull-right"><i class="myfa fa-solid fa-bed-pulse"></i></h3>
-                <h4 class="list-group-item-heading count" id="active"></h4>
-                <p class="list-group-item-text">Active Cases</p>
-              </a>
+            <a class=" mya list-group-item active-case">
+              <h3 class="pull-right"><i class="myfa fa-solid fa-bed-pulse"></i></h3>
+              <h4 class="list-group-item-heading count" id="active"></h4>
+              <p class="list-group-item-text">Active Cases</p>
+            </a>
 
-              <a class=" mya list-group-item rec-case">
-                <h3 class="pull-right"><i class="myfa fa-solid fa-check-double"></i></h3>
-                <h4 class="list-group-item-heading count" id="recovered"></h4>
-                <p class="list-group-item-text">Recovered Cases</p>
-              </a>
+            <a class=" mya list-group-item rec-case">
+              <h3 class="pull-right"><i class="myfa fa-solid fa-check-double"></i></h3>
+              <h4 class="list-group-item-heading count" id="recovered"></h4>
+              <p class="list-group-item-text">Recovered Cases</p>
+            </a>
 
-              <a class=" mya list-group-item death">
-                <h3 class="pull-right"><i class="myfa fa-solid fa-skull"></i></h3>
-                <h4 class="list-group-item-heading count" id="deaths"></h4>
-                <p class="list-group-item-text">Deaths</p>
-              </a>
+            <a class=" mya list-group-item death">
+              <h3 class="pull-right"><i class="myfa fa-solid fa-skull"></i></h3>
+              <h4 class="list-group-item-heading count" id="deaths"></h4>
+              <p class="list-group-item-text">Deaths</p>
+            </a>
 
-              <a class=" mya list-group-item critical">
-                <h3 class="pull-right"><i class="myfa fa-solid fa-house-medical-circle-exclamation"></i></h3>
-                <h4 class="list-group-item-heading count" id="critical"></h4>
-                <p class="list-group-item-text">Critical Cases</p>
-              </a>
+            <a class=" mya list-group-item critical">
+              <h3 class="pull-right"><i class="myfa fa-solid fa-house-medical-circle-exclamation"></i></h3>
+              <h4 class="list-group-item-heading count" id="critical"></h4>
+              <p class="list-group-item-text">Critical Cases</p>
+            </a>
 
-              
-              <a class="mya list-group-item test">
-                <h3 class="pull-right"><i class="myfa fa-solid fa-microscope"></i></h3>
-                <h4 class="list-group-item-heading count" id="tests"></h4>
-                <p class="list-group-item-text">Tests</p>
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-12 col-lg-8">
-            <!-- <iframe src="https://maps.mapmyindia.com/corona" ></iframe> -->
-            <div class="flourish-embed flourish-map" data-chrome="nofooter noheader noborders" data-src="story/225979"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-            
-          </div>
-          <!-- <div>
-            <div class="flourish-embed flourish-table" data-src="story/230195"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-          </div> -->
-        </div>  
-      </div>
-    </section>
-    
 
-    <!-- About Project -->
-    <section id="abt-project" class="p-5">
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-md">
-            <img src="img/fundamentals.svg" class="img-fluid" alt="" />
-          </div>
-          <div class="col-md p-5">
-            <h2>About</h2>
-            <p class="lead">
-              ResNet helps us to solve the degradation in performance which
-              occurs by adding additional layers by introducing the concept of
-              skip connections also known as shortcuts in between layers which
-              allow faster transfer between deep layers.
-            </p>
-            <p>
-              In this project, a Residual Neural Network (ResNet-18) is used to
-              classify image samples of chest X-Ray data of patients having
-              COVID-19 pneumonia thereby detecting the existence of Coronavirus
-              in the patient.
-            </p>
-            <a href="about.html" class="btn btn-light mt-3">
-              <i class="bi bi-chevron-right"></i> Read More
+            <a class="mya list-group-item test">
+              <h3 class="pull-right"><i class="myfa fa-solid fa-microscope"></i></h3>
+              <h4 class="list-group-item-heading count" id="tests"></h4>
+              <p class="list-group-item-text">Tests</p>
             </a>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="col-sm-12 col-md-12 col-lg-8">
 
-    <!-- Tweets Section -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active bg-dark text-light p-4">
-          <div class="container">
-            <div class="row align-items-center justify-content-between">
-              <div class="col-md p-5">
-                <h2>Indian Council of Medical Research (ICMR)</h2>
-                <p class="lead">
-                  The Indian Council of Medical Research (ICMR), New Delhi, the apex
-                  body in India for the formulation, coordination and promotion of
-                  biomedical research, is one of the oldest medical research bodies
-                  in the world.
-                </p>
-                <p>
-                  The ICMR has always attempted to address itself to the growing
-                  demands of scientific advances in biomedical research on the one
-                  hand, and to the need of finding practical solutions to the health
-                  problems of the country, on the other. The ICMR has come a long
-                  way from the days when it was known as the IRFA, but the Council
-                  is conscious of the fact that it still has miles to go in pursuit
-                  of scientific achievements as well as health targets.
-                </p>
-                <a
-                  href="https://main.icmr.nic.in/"
-                  target="_blank"
-                  class="btn btn-primary mt-3">
-                  <i class="bi bi-chevron-right"></i>
-                  Read More
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a
-                  class="text-center twitter-timeline"
-                  data-chrome="nofooter"
-                  data-lang="en"
-                  data-width="300"
-                  data-height="400"
-                  data-theme="dark"
-                  href="https://twitter.com/ICMRDELHI?ref_src=twsrc%5Etfw"
-                  >Tweets by ICMRDELHI</a
-                >
-                <script
-                  async
-                  src="https://platform.twitter.com/widgets.js"
-                  charset="utf-8"
-                ></script>
-              </div>
-            </div>
+          <div class="flourish-embed flourish-map" data-chrome="nofooter noheader noborders" data-src="story/225979">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
           </div>
+
         </div>
-        <div class="carousel-item bg-dark text-light p-4">
-          <div class="container">
-            <div class="row align-items-center justify-content-between">
-              <div class="col-md p-5">
-                <h2>World Health Organization (WHO)</h2>
-                <p class="lead">
-                  The World Health Organization is a specialized agency of the
-                  United Nations responsible for international public health.
-                </p>
-                <p>
-                  WHO says that "Most people infected with the virus will experience
-                  mild to moderate respiratory illness and recover without requiring
-                  special treatment. However, some will become seriously ill and
-                  require medical attention. Older people and those with underlying
-                  medical conditions like cardiovascular disease, diabetes, chronic
-                  respiratory disease, or cancer are more likely to develop serious
-                  illness. Anyone can get sick with COVID-19 and become seriously
-                  ill or die at any age."
-                </p>
-                <a
-                  href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public"
-                  target="_blank"
-                  class="btn btn-light mt-3">
-                  <i class="bi bi-chevron-right"></i> Read More
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a
-                  class="twitter-timeline"
-                  data-chrome="nofooter"
-                  data-width="300"
-                  data-height="400"
-                  data-dnt="true"
-                  href="https://twitter.com/WHO?ref_src=twsrc%5Etfw"
-                  >Tweets by WHO</a
-                >
-                <script
-                  async
-                  src="https://platform.twitter.com/widgets.js"
-                  charset="utf-8"
-                ></script>
-              </div>
-            </div>
-          </div>
-        </div>
+
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
+  </section>
 
-    <!-- Developer Cards -->
-    <section id="developers">
-      <div class="container text-center">
-		  <h2 class="mb-5">Our Team</h2>
-        <div class="row align-items-center justify-content-center">
-          <div class="col-md-6">
-            <div class="card">
-              <div class="content">
-                <div class="imgBx">
-                  <img src="img/shefali.jpeg" />
-                </div>
-                <div class="contentBx">
-                  <h3 class="text-dark">
-                    Lion<br /><span>Happy Birthday</span>
-                  </h3>
-                </div>
+
+  <!-- About Project -->
+  <section id="abt-project" class="p-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md">
+          <img src="img/fundamentals.svg" class="img-fluid" alt="" />
+        </div>
+        <div class="col-md p-5">
+          <h2>About</h2>
+          <p class="lead">
+            ResNet helps us to solve the degradation in performance which
+            occurs by adding additional layers by introducing the concept of
+            skip connections also known as shortcuts in between layers which
+            allow faster transfer between deep layers.
+          </p>
+          <p>
+            In this project, a Residual Neural Network (ResNet-18) is used to
+            classify image samples of chest X-Ray data of patients having
+            COVID-19 pneumonia thereby detecting the existence of Coronavirus
+            in the patient.
+          </p>
+          <a href="about.html" class="btn btn-light mt-3">
+            <i class="bi bi-chevron-right"></i> Read More
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tweets Section -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active bg-dark text-light p-4">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md p-5">
+              <h2>Indian Council of Medical Research (ICMR)</h2>
+              <p class="lead">
+                The Indian Council of Medical Research (ICMR), New Delhi, the apex
+                body in India for the formulation, coordination and promotion of
+                biomedical research, is one of the oldest medical research bodies
+                in the world.
+              </p>
+              <p>
+                The ICMR has always attempted to address itself to the growing
+                demands of scientific advances in biomedical research on the one
+                hand, and to the need of finding practical solutions to the health
+                problems of the country, on the other. The ICMR has come a long
+                way from the days when it was known as the IRFA, but the Council
+                is conscious of the fact that it still has miles to go in pursuit
+                of scientific achievements as well as health targets.
+              </p>
+              <a href="https://main.icmr.nic.in/" target="_blank" class="btn btn-primary mt-3">
+                <i class="bi bi-chevron-right"></i>
+                Read More
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a class="text-center twitter-timeline" data-chrome="nofooter" data-lang="en" data-width="300"
+                data-height="400" data-theme="dark" href="https://twitter.com/ICMRDELHI?ref_src=twsrc%5Etfw">Tweets by
+                ICMRDELHI</a>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item bg-dark text-light p-4">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md p-5">
+              <h2>World Health Organization (WHO)</h2>
+              <p class="lead">
+                The World Health Organization is a specialized agency of the
+                United Nations responsible for international public health.
+              </p>
+              <p>
+                WHO says that "Most people infected with the virus will experience
+                mild to moderate respiratory illness and recover without requiring
+                special treatment. However, some will become seriously ill and
+                require medical attention. Older people and those with underlying
+                medical conditions like cardiovascular disease, diabetes, chronic
+                respiratory disease, or cancer are more likely to develop serious
+                illness. Anyone can get sick with COVID-19 and become seriously
+                ill or die at any age."
+              </p>
+              <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public"
+                target="_blank" class="btn btn-light mt-3">
+                <i class="bi bi-chevron-right"></i> Read More
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a class="twitter-timeline" data-chrome="nofooter" data-width="300" data-height="400" data-dnt="true"
+                href="https://twitter.com/WHO?ref_src=twsrc%5Etfw">Tweets by WHO</a>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Developer Cards -->
+  <section id="developers">
+    <div class="container text-center">
+    <h2 class="mb-5">Developers</h2>
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="content">
+              <div class="imgBx">
+                <img src="img/shefali.jpeg" />
               </div>
-              <ul class="sci">
-                <li>
-                  <a href="#" target="_blank" class=""
-                    ><i class="my text-dark fa-brands fa-twitter-square"></i
-                  ></a>
+              <div class="contentBx">
+                <h3 class="text-dark">
+                  Lion<br /><span>Happy Birthday</span>
+                </h3>
+              </div>
+            </div>
+            <ul class="sci">
+              <li>
+                <a href="#" target="_blank" class=""
+                  ><i class="my text-dark fa-brands fa-twitter-square"></i></a>
+              </li>
+              <li>
+                <a href="#" target="_blank" class=""
+                  ><i class="text-dark fa-brands fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#" target="_blank" class=""
+                  ><i class="text-dark fa-brands fa-github-square"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card text-center">
+            <div class="content">
+              <div class="imgBx">
+                <img src="img/shefali.jpeg" />
+              </div>
+              <div class="contentBx">
+                <h3 class="text-dark">
+                  Lion<br /><span>Happy Birthday</span>
+                </h3>
+              </div>
+            </div>
+            <ul class="sci">
+              <li>
+                <a href="#" target="_blank" class=""
+                  ><i class="my text-dark fa-brands fa-twitter-square"></i></a>
+              </li>
+              <li>
+                <a href="#" target="_blank" class=""
+                  ><i class="text-dark fa-brands fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#" target="_blank" class=""
+                  ><i class="text-dark fa-brands fa-github-square"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Tag -->
+  <div class="sidebar-contact">
+    <div class="toggle"><i style="color: antiquewhite;" class="fa-solid fa-message-text"></i></div>
+    <h2>Mail Me</h2>
+    <div class="scroll">
+      <form action="mailto:shefali.bansal2008@gmail.com">
+        <input type="text" name="subject" placeholder="Subject" />
+        <textarea name="body" placeholder="Message here.."></textarea>
+        <input type="submit" name="" value="send" />
+      </form>
+    </div>
+  </div>
+
+  <!-- Question Accordion -->
+  <section id="faq" class="p-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+      <div class="accordion accordion-flush" id="questions">
+        <!-- Item 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-one">
+              What formats of images are accepted?
+            </button>
+          </h2>
+          <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
+            <div class="accordion-body">
+              Images in the format of .png, .jpeg and .jpg are accepted.
+            </div>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-two">
+              What is ResNet-18?
+            </button>
+          </h2>
+          <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
+            <div class="accordion-body">
+              ResNet-18 is a convolutional neural network that is 18 layers
+              deep. You can load a pretrained version of the network trained
+              on more than a million images from the ImageNet database. The
+              pretrained network can classify images into 1000 object
+              categories, such as keyboard, mouse, pencil, and many animals.
+              As a result, the network has learned rich feature
+              representations for a wide range of images.
+            </div>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-three">
+              How accurate is the model?
+            </button>
+          </h2>
+          <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
+            <div class="accordion-body">
+              The model has been trained to an accuracy of 98.11% on a
+              database of approximately 15,000 images.
+            </div>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-four">
+              Is my data confidential?
+            </button>
+          </h2>
+          <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#questions">
+            <div class="accordion-body">
+              No data is being stored in any kind of database.
+            </div>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-five">
+              How long will it take to give the results?
+            </button>
+          </h2>
+          <div id="question-five" class="accordion-collapse collapse" data-bs-parent="#questions">
+            <div class="accordion-body">
+              It will take approximately a minute or two to display the resuls
+              on screen.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="section bg-footer position-relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <div class="">
+            <h6 class="footer-heading text-uppercase text-white">Home</h6>
+            <ul class="list-unstyled footer-link mt-4">
+              <li><a href="">Pages</a></li>
+              <li><a href="">Our Team</a></li>
+              <li><a href="">Feuchers</a></li>
+              <li><a href="">Pricing</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="">
+            <h6 class="footer-heading text-uppercase text-white">About</h6>
+            <ul class="list-unstyled footer-link mt-4">
+              <li><a href="">Monitoring Grader </a></li>
+              <li><a href="">Video Tutorial</a></li>
+              <li><a href="">Term &amp; Service</a></li>
+              <li><a href="">Zeeko API</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="">
+            <h6 class="footer-heading text-uppercase text-white">Model</h6>
+            <ul class="list-unstyled footer-link mt-4">
+              <li><a href="">Sign Up </a></li>
+              <li><a href="">Login</a></li>
+              <li><a href="">Terms of Services</a></li>
+              <li><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="">
+            <h6 class="footer-heading text-uppercase text-white">Contact Us</h6>
+            <p class="contact-info mt-4">Contact us if need help withanything</p>
+            <p class="contact-info">+01 123-456-7890</p>
+            <div class="mt-5">
+              <ul class="list-inline">
+                <li class="list-inline-item"><a href="#"><i
+                      class="fab linkedin footer-social-icon fa-linkedin-in"></i></i></a></li>
+                <li class="list-inline-item"><a href="#"><i
+                      class="fab twitter footer-social-icon fa-twitter"></i></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fab google footer-social-icon fa-google"></i></i></a>
                 </li>
-                <li>
-                  <a href="#" target="_blank" class=""
-                    ><i class="text-dark fa-brands fa-linkedin"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#" target="_blank" class=""
-                    ><i class="text-dark fa-brands fa-github-square"></i
-                  ></a>
+                <li class="list-inline-item"><a href="#"><i class="fab github footer-social-icon fa-github"></i></i></a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card text-center">
-              <div class="content">
-                <div class="imgBx">
-                  <img src="img/shefali.jpeg" />
-                </div>
-                <div class="contentBx">
-                  <h3 class="text-dark">
-                    Lion<br /><span>Happy Birthday</span>
-                  </h3>
-                </div>
-              </div>
-              <ul class="sci">
-                <li>
-                  <a href="#" target="_blank" class=""
-                    ><i class="my text-dark fa-brands fa-twitter-square"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#" target="_blank" class=""
-                    ><i class="text-dark fa-brands fa-linkedin"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#" target="_blank" class=""
-                    ><i class="text-dark fa-brands fa-github-square"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Contact Tag -->
-    <div class="sidebar-contact">
-      <div class="toggle"><i style="color: antiquewhite;" class="fa-solid fa-message-text"></i></div>
-      <h2>Mail Me</h2>
-      <div class="scroll">
-        <form action="mailto:shefali.bansal2008@gmail.com">
-          <input type="text" name="subject" placeholder="Subject" />
-          <textarea name="body" placeholder="Message here.."></textarea>
-          <input type="submit" name="" value="send" />
-        </form>
       </div>
     </div>
+  </footer>
 
-    <!-- Question Accordion -->
-    <section id="faq" class="p-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
-        <div class="accordion accordion-flush" id="questions">
-          <!-- Item 1 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#question-one"
-              >
-                What formats of images are accepted?
-              </button>
-            </h2>
-            <div
-              id="question-one"
-              class="accordion-collapse collapse"
-              data-bs-parent="#questions"
-            >
-              <div class="accordion-body">
-                Images in the format of .png, .jpeg and .jpg are accepted.
-              </div>
-            </div>
-          </div>
-          <!-- Item 2 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#question-two"
-              >
-                What is ResNet-18?
-              </button>
-            </h2>
-            <div
-              id="question-two"
-              class="accordion-collapse collapse"
-              data-bs-parent="#questions"
-            >
-              <div class="accordion-body">
-                ResNet-18 is a convolutional neural network that is 18 layers
-                deep. You can load a pretrained version of the network trained
-                on more than a million images from the ImageNet database. The
-                pretrained network can classify images into 1000 object
-                categories, such as keyboard, mouse, pencil, and many animals.
-                As a result, the network has learned rich feature
-                representations for a wide range of images.
-              </div>
-            </div>
-          </div>
-          <!-- Item 3 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#question-three"
-              >
-                How accurate is the model?
-              </button>
-            </h2>
-            <div
-              id="question-three"
-              class="accordion-collapse collapse"
-              data-bs-parent="#questions"
-            >
-              <div class="accordion-body">
-                The model has been trained to an accuracy of 98.11% on a
-                database of approximately 15,000 images.
-              </div>
-            </div>
-          </div>
-          <!-- Item 4 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#question-four"
-              >
-                Is my data confidential?
-              </button>
-            </h2>
-            <div
-              id="question-four"
-              class="accordion-collapse collapse"
-              data-bs-parent="#questions"
-            >
-              <div class="accordion-body">
-                No data is being stored in any kind of database.
-              </div>
-            </div>
-          </div>
-          <!-- Item 5 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#question-five"
-              >
-                How long will it take to give the results?
-              </button>
-            </h2>
-            <div
-              id="question-five"
-              class="accordion-collapse collapse"
-              data-bs-parent="#questions"
-            >
-              <div class="accordion-body">
-                It will take approximately a minute or two to display the resuls
-                on screen.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="section bg-footer position-relative">
-      <div class="container">
-          <div class="row">
-              <div class="col-3">
-                  <div class="">
-                      <h6 class="footer-heading text-uppercase text-white">Home</h6>
-                      <ul class="list-unstyled footer-link mt-4">
-                          <li><a href="">Pages</a></li>
-                          <li><a href="">Our Team</a></li>
-                          <li><a href="">Feuchers</a></li>
-                          <li><a href="">Pricing</a></li>
-                      </ul>
-                  </div>
-              </div>
 
-              <div class="col-3">
-                  <div class="">
-                      <h6 class="footer-heading text-uppercase text-white">About</h6>
-                      <ul class="list-unstyled footer-link mt-4">
-                          <li><a href="">Monitoring Grader </a></li>
-                          <li><a href="">Video Tutorial</a></li>
-                          <li><a href="">Term &amp; Service</a></li>
-                          <li><a href="">Zeeko API</a></li>
-                      </ul>
-                  </div>
-              </div>
+  <!-- Back to top button -->
+  <a id="back-to-top" href="#" class="back-to-top" role="button"><i class="fa-solid fa-circle-arrow-up fa-2x"></i></a>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+</body>
 
-              <div class="col-3">
-                  <div class="">
-                      <h6 class="footer-heading text-uppercase text-white">Model</h6>
-                      <ul class="list-unstyled footer-link mt-4">
-                          <li><a href="">Sign Up </a></li>
-                          <li><a href="">Login</a></li>
-                          <li><a href="">Terms of Services</a></li>
-                          <li><a href="">Privacy Policy</a></li>
-                      </ul>
-                  </div>
-              </div>
-
-              <div class="col-3">
-                  <div class="">
-                      <h6 class="footer-heading text-uppercase text-white">Contact Us</h6>
-                      <p class="contact-info mt-4">Contact us if need help withanything</p>
-                      <p class="contact-info">+01 123-456-7890</p>
-                      <div class="mt-5">
-                          <ul class="list-inline">
-                              <li class="list-inline-item"><a href="#"><i class="fab linkedin footer-social-icon fa-linkedin-in"></i></i></a></li>
-                              <li class="list-inline-item"><a href="#"><i class="fab twitter footer-social-icon fa-twitter"></i></i></a></li>
-                              <li class="list-inline-item"><a href="#"><i class="fab google footer-social-icon fa-google"></i></i></a></li>
-                              <li class="list-inline-item"><a href="#"><i class="fab github footer-social-icon fa-github"></i></i></a></li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-
-          </div>
-      </div>
-    </footer>
-
-    
-
-    <!-- Back to top button -->
-    <a id="back-to-top" href="#" class="back-to-top" role="button"><i class="fa-solid fa-circle-arrow-up fa-2x"></i></a>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
