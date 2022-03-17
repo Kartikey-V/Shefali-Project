@@ -44,19 +44,16 @@
         <div class="collapse navbar-collapse" id="navmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="#cov-counter" class="nav-link">Covid Counter</a>
+              <a href="#stats" class="nav-link">Live Stats</a>
             </li>
             <li class="nav-item">
               <a href="#abt-project" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="#who" class="nav-link">WHO</a>
+              <a href="#carouselExampleIndicators" class="nav-link">Live Tweets</a>
             </li>
             <li class="nav-item">
-              <a href="#icmr" class="nav-link">ICMR</a>
-            </li>
-            <li class="nav-item">
-              <a href="#devs" class="nav-link">Developers</a>
+              <a href="#developers" class="nav-link">Our Team</a>
             </li>
             <li class="nav-item">
               <a href="#faq" class="nav-link">FAQs</a>
@@ -105,116 +102,47 @@
       </div>
     </section>
 
-    <!-- Covid Counter -->
-    <section id="cov-counter" class="p-5">
-      <!-- <div class="container text-center">
-        <h2 class="pb-4">COVID -19 Cases in India<img src="" /></h2>
-        <div class="row text-center g-4">
-          <div class="col-md">
-            <div
-              onmouseover="remClass(this, 'blues')"
-              onmouseout="adClass(this, 'blues')"
-              class="card covid-card bg-dark text-light"
-            >
-              <div class="card-body text-center">
-                <div class="h1 mb-3">
-                  <i class="fa-solid fa-hospital"></i>
-                </div>
-                <h3 class="card-title mb-3">Total Cases</h3>
-                <div class="counter">
-                  <span class="card-span card-subtitle" id="total"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md" id="act">
-            <div
-              onmouseover="remClass(this, 'yellows')"
-              onmouseout="adClass(this, 'yellows')"
-              class="card covid-card bg-dark text-light"
-            >
-              <div class="card-body text-center">
-                <div class="h1 mb-3">
-                  <i class="fa-solid fa-bed-pulse"></i>
-                </div>
-                <h3 class="card-title mb-3">Active</h3>
-                <span class="card-span card-subtitle" id="active"></span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md">
-            <div
-              onmouseover="remClass(this, 'greens')"
-              onmouseout="adClass(this, 'greens')"
-              class="card covid-card bg-dark text-light rec"
-            >
-              <div class="card-body text-center">
-                <div class="h1 mb-3">
-                  <i class="fa-solid fa-user-check"></i>
-                </div>
-                <h3 class="card-title mb-3">Recovered</h3>
-                <span class="card-span card-subtitle" id="recovered"></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md">
-            <div
-              onmouseover="remClass(this, 'reds')"
-              onmouseout="adClass(this, 'reds')"
-              class="card covid-card bg-dark text-light"
-            >
-              <div class="card-body text-center">
-                <div class="h1 mb-3">
-                  <i class="fa-solid fa-skull"></i>
-                </div>
-                <h3 class="card-title mb-3">Deaths</h3>
-                <span class="card-span card-subtitle" id="deaths"></span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div> -->
-      <div class="container">
+    <!-- Covid Stats -->
+    <section id="stats" class="p-5">      
+      <div class="container">        
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-4">
             <div class="list-group">
-              <a href="http://www.jquery2dotnet.com" class=" mya list-group-item visitor">
-                <h3 class="pull-right">
-                              <i class="myfa fa fa-eye"></i>
-                          </h3>
-                <h4 class="list-group-item-heading count" id="total">
-                             </h4>
-                <p class="list-group-item-text" >
-                  Total Cases</p>
+              <a class=" mya list-group-item total-case">
+                <h3 class="pull-right"><i class="myfa fa fa-eye"></i></h3>
+                <h4 class="list-group-item-heading count" id="total"></h4>
+                <p class="list-group-item-text">Total Cases</p>
               </a>
-              <a href="http://www.jquery2dotnet.com" class="mya list-group-item facebook-like">
-                <h3 class="pull-right">
-                              <i class="myfa fa fa-facebook-square"></i>
-                          </h3>
-                <h4 class="list-group-item-heading count" id="active">
-                              </h4>
-                <p class="list-group-item-text">
-                  Active</p>
+
+              <a class=" mya list-group-item active-case">
+                <h3 class="pull-right"><i class="myfa fa-solid fa-bed-pulse"></i></h3>
+                <h4 class="list-group-item-heading count" id="active"></h4>
+                <p class="list-group-item-text">Active Cases</p>
               </a>
-              <a href="http://www.jquery2dotnet.com" class="mya list-group-item google-plus">
-                <h3 class="pull-right">
-                              <i class="myfa fa fa-google-plus-square"></i>
-                          </h3>
-                <h4 class="list-group-item-heading count" id="recovered">
-                              </h4>
-                <p class="list-group-item-text">
-                  Recovered</p>
+
+              <a class=" mya list-group-item rec-case">
+                <h3 class="pull-right"><i class="myfa fa-solid fa-check-double"></i></h3>
+                <h4 class="list-group-item-heading count" id="recovered"></h4>
+                <p class="list-group-item-text">Recovered Cases</p>
               </a>
-              <a href="http://www.jquery2dotnet.com" class="mya list-group-item goo">
-                <h3 class="pull-right">
-                              <i class="myfa fa fa-twitter-square"></i>
-                          </h3>
-                <h4 class="list-group-item-heading count" id="deaths">
-                              </h4>
-                <p class="list-group-item-text">
-                  Deaths</p>
+
+              <a class=" mya list-group-item death">
+                <h3 class="pull-right"><i class="myfa fa-solid fa-skull"></i></h3>
+                <h4 class="list-group-item-heading count" id="deaths"></h4>
+                <p class="list-group-item-text">Deaths</p>
+              </a>
+
+              <a class=" mya list-group-item critical">
+                <h3 class="pull-right"><i class="myfa fa-solid fa-house-medical-circle-exclamation"></i></h3>
+                <h4 class="list-group-item-heading count" id="critical"></h4>
+                <p class="list-group-item-text">Critical Cases</p>
+              </a>
+
+              
+              <a class="mya list-group-item test">
+                <h3 class="pull-right"><i class="myfa fa-solid fa-microscope"></i></h3>
+                <h4 class="list-group-item-heading count" id="tests"></h4>
+                <p class="list-group-item-text">Tests</p>
               </a>
             </div>
           </div>
@@ -259,6 +187,7 @@
         </div>
       </div>
     </section>
+
     <!-- Tweets Section -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -373,7 +302,7 @@
     <!-- Developer Cards -->
     <section id="developers">
       <div class="container text-center">
-		  <h2 class="mb-5">Developers</h2>
+		  <h2 class="mb-5">Our Team</h2>
         <div class="row align-items-center justify-content-center">
           <div class="col-md-6">
             <div class="card">

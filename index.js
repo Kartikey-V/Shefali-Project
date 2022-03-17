@@ -8,20 +8,9 @@ fetch('https://disease.sh/v3/covid-19/countries/india')
     document.getElementById("total").innerHTML = data.cases.toLocaleString();
     document.getElementById("deaths").innerHTML = data.deaths.toLocaleString();
     document.getElementById("recovered").innerHTML = data.recovered.toLocaleString();
+	document.getElementById("critical").innerHTML = data.recovered.toLocaleString();
+	document.getElementById("tests").innerHTML = data.recovered.toLocaleString();
 });
-
-function remClass(x, str){
-  x.classList.remove("bg-dark");
-  x.classList.remove("text-light");
-  x.classList.add(str);
-}
-function adClass(x, str){
-  x.classList.remove(str);
-  x.classList.add("bg-dark");
-  x.classList.add("text-light");
-
-}
-
 
 // Scroll TO Top
 $(document).ready(function(){
