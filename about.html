@@ -12,9 +12,11 @@
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="aboutStyle.css" />
   <title>About Page</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="index.js"></script>
+  <!-- <script src="onlyAbout.js"></script> -->
 </head>
 
 <body>
@@ -44,136 +46,282 @@
   </nav>
 
   <!-- About Project -->
-  <section id="intro" class="p-5">
+  <section id="intro" class="p-5 text-white">
     <div class="container">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-md p-3">
+      <div class="d-sm-flex align-items-center justify-content-between">
+        <!-- row align-items-center justify-content-between
+        <div class="col-sm-12 col-md-4 col-lg-4"> 
+            <img class="img-fluid w-50 d-none d-sm-block" src="img/Sentiment analysis-amico.svg" alt="" />
+        </div>
+        class="col-sm-12 col-md-8 col-lg-8 p-3" -->
+        
+        <div >
           <h2>INTRODUCTION</h2>
-          <p> 
-            The SARS-CoV-2 virus causes a contagious disease known as Coronavirus disease.
-            The COVID-19 virus gets mediated predominantly through droplets of saliva and mucus of an ailing person.
-            Elderly people and populations which suffer from prevalent health issues akin to diabetes, heart diseases,
-            and chronic respiratory illness are more likely to develop grave illnesses.
+          <p>Sentiment analysis refers to categorizing the emotions articulated in the extracted data. 
+            It is used to mine opinions of the population at large and judge the flow of public opinion. 
+            This is done by adding emotional context to the previously textual data. 
+          </p> 
+          <p>It is necessary for making the block of information useful. 
+            Rule-based methods have high precision but low recall. 
+            Deep learning methods perpetrate great for most of the tasks in NLP. This work examines the 
+            dissemination of erudition about the covid-19 vaccination tweets. Social media offers us a platform to 
+            share our thoughts freely.           
+          </p> 
+          <p>This work performs sentimental analysis 
+            on the tweets and showcases the societal perception regarding the issue. The posts will be subjected to three categories: 
+            Positive (for score tending to the higher value, i.e., 1) that account for hope, happiness, etc.;
+            Neutrality (for posts having higher subjectivity due to factual information), and Negative (for score tending to 
+            the lower value, i.e., 0). Also provided is a side-by-side performance evaluation of RNN/LSTM and CNN.
           </p>
-          <p>
-            Patients might develop COVID-19 pneumonia as a result of being infected by the coronavirus for which the
-            diagnosis using chest X-Ray is difficult and time-consuming, but at the same time,
-            a chest x-ray is the most commonly available option that can even be used in underdeveloped and remote areas
-            where there is a shortage of specialists.
-            Therefore, the implementation of newfangled artificial intelligence along with X-ray imaging may help in the
-            precise detection of this disease.
-          </p>
-          <p>
-            In this project, a Residual Neural Network (ResNet-18) is used to classify image samples of chest X-Ray data
-            of patients having
-            COVID-19 pneumonia thereby detecting the existence of Coronavirus in the patient.
-          </p>
-          <p>
-            Machine learning is the study of algorithms that systems can take advantage of to accomplish a certain task.
-            The systems rely on patterns and differences in provided data to learn.
-            Machine learning algorithms help to build a systematic model based on data known as training data.
-          </p>
-          <p>
-            Convolutional Neural Networks come under Deep Learning, which is a subsection of ML. The working algorithms
-            under Deep Learning compute the data in a way similar to the brain of a human,
-            in an Artificial Neural Network, there are units called nodes, which are interconnected in tandem in a
-            layer-wise fashion, in which each node performs a simple calculation.
-          </p>
-          <p>
-            CNNs are great with computations which require computation of pixel-related data and are used for tasks
-            involving detection and identification of objects.
-            In case of a complex problem which has many attributes, we can add in some extra layers to the Neural
-            Network which can result in enhanced performance of the Network.
-          </p>
-          <p>By increasing layers in the Network, the layers are able to learn the complex attributes better and more
-            accurately.
-            However, adding more layers means more computation power is required, but simply having more layers will not
-            always result in increased results.
-            If the Network gets too deep, it might result in the accuracy degraded performance.
-          </p>
-          <p>
-            This is where Residual Neural Networks come into the picture. ResNet helps us to solve this degradation in
-            performance which occurs by adding additional layers by introducing the concept of skip connections also
-            known as shortcuts
-            in between layers which allow faster transfer between deep layers.
+          <p> Federated Learning is a distributed ML approach that facilitates training on an extensive canon of decentralized 
+            text rooming on gadgets like smartphones. FL is one illustration of the more prevalent technique of “fetching 
+            the code to the data, rather than data to the code” while managing the rudimentary concerns of privacy, privilege, 
+            and locality of text. We present to train a recurrent neural network language model using a distributed, on-device 
+            learning framework called federated learning for Opinion Mining of COVID-19 Vaccination Tweets.
           </p>
         </div>
+        <img class="img-fluid w-50 d-none d-sm-block" src="img/Sentiment analysis-amico.svg" alt="" />
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- METHODOLOGY TIMELINE -->
+  <section id="data" class="mt-5">
+    <div class="container py-5">
+
+      <!-- For demo purpose -->
+      <div class="row text-center text-white mb-5">
+          <div class="col-lg-8 mx-auto">
+              <h1 class="display-4">Data Pre-Processing</h1>
+              <p class="lead mb-0">This section outlines all steps necessary to prepare the data before the final implementation.</p>
+              </div>
+      </div><!-- End -->
+  
+  
+      <div class="row">
+          <div class="col-lg-7 mx-auto">
+              
+              <!-- Timeline -->
+              <ul class="timeline">
+                  <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                      <div class="timeline-arrow"></div>
+                      <h2 class="h5 mb-0">Data Acqusition</h2>
+                      <p class="text-small mt-2 font-weight-light">We experimented with the <a href="https://www.kaggle.com/gpreda/all-covid19-vaccines-tweets" target="_blank">Covid-19 All Vaccine Tweets</a> dataset. 
+                        The dataset is hosted on an open-source platform Kaggle. It is licensed under CC0: Public Domain. 
+                        It used relevant search terms using the ‘Tweepy’ python module from Twitter API. 
+                        It had started collecting regarding the relevant hashtags from over the world in February 2021 and has been updated 
+                        daily since.</p>
+                  </li>
+                  <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                      <div class="timeline-arrow"></div>
+                      <h2 class="h5 mb-0">Data Cleaning</h2>
+                      <p class="text-small mt-2 font-weight-light">The dataset provides information in a tabular format divided by numerous attributes. Some of the given data types like the date and time of the post
+                        provide no particular use while extracting the sentiment. </p>
+                      <p class="text-small mt-2 font-weight-light">So, during the cleaning of the data set, we remove the extraneous columns, duplicate tweets, stop-words, special characters to lessen the noisy data present. 
+                        This also assures the exclusion of any #hashtags, URL(s), user-handles, punctuation, whitespaces, etc.</p>
+                  </li>
+                  <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                      <div class="timeline-arrow"></div>
+                      <h2 class="h5 mb-0">Tokenisation</h2>
+                      <p class="text-small mt-2 font-weight-light">For this operation, the textual corpus is broken into meaningful subparts called 'tokens'. These are necessary input elements for further lexical and semantic exploration of the corpus. The creation of n-gram tokens gives meaning to the word itself and whether it is annotated as positive or negative perception</p>
+                  </li>
+                  <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                      <div class="timeline-arrow"></div>
+                      <h2 class="h5 mb-0">Lemmatization</h2>
+                      <p class="text-small mt-2 font-weight-light">This is necessary as writers use a variety of tenses and formats when formulating their posts. Also, many words have their related derivatives. To reduce the variation of tones and inflection, we transfigure the text to its base form. To remove derivational affixes and use the correct morphological format of the word, stemming references a vocabulary and removes inflectional endings.</p>
+                  </li>
+                  <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                    <div class="timeline-arrow"></div>
+                    <h2 class="h5 mb-0">Feature Extraction</h2>
+                    <p class="text-small mt-2 font-weight-light">This module provides word optimization, vectorization, and embedding features. We use it to map the words to their significant numbered weights, which greatly help in processing the data into neural networks. It illustrates the semantic relation of sentence composition. This is essential for eliciting appropriate erudition and the NLU.</p>
+                </li>
+                <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                  <div class="timeline-arrow"></div>
+                  <h2 class="h5 mb-0">Assigning Polarity</h2>
+                  <p class="text-small mt-2 font-weight-light">To analyze the predictions of our implementation models, we have labeled the sentiments to all the tweets using TextBlob.</p>
+              </li>
+              </ul><!-- End -->
+
+          </div>
       </div>
     </div>
   </section>
 
-  <!-- Tweet WHO -->
-  <section id="methodology" class="p-5 bg-dark text-light">
+  <!-- Methodology  -->
+  <section id="methodology" class="p-5 text-white">
     <div class="container">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-md p-2">
-          <h2>METHODOLOGY</h2>
-          <p class="lead">
-            DATA ACQUISITION
-          </p>
-          <p>
-            A reliable source of data is required to modulate a considerable ML model. A model can only become as
-            accurate as the dataset which is used in training and validating it.
-            COVID-19 Radiography Dataset (by Qatar University, Doha) was finalized, which contained Chest X-Ray samples
-            of 3 classes normal, viral pneumonia, and
-            COVID-19 which had 10192, 1345, and 3616 samples respectively.
-          </p>
-          <p class="lead">
-            DATA PRE-PROCESSING
-          </p>
-          <p>
-            The following methods were used to pre-process the dataset:
-          </p>
-          <ul>
-            <li>Compose - It is used to compose multiple transforms together.</li>
-            <li>Resize - Used to resize the input tensor to a specified size. If the specified size is greater, resizing
-              is done to incorporate the additional elements.</li>
-            <li>Normalize - This normalizes an image in tensor form by using mean deviation along with standard
-              deviation techniques. </li>
-            <li>RandomHorizontalFlip - This is used to horizontally flip an image in a random fashion with a specified
-              probability 'p'.</li>
-            <li>ToTensor - This transformation converts images that are in PIL format into a tensor format. Output
-              tensor will have the dimensions with the format (C*H*W), where C is the count of Channels, H is the
-              height, W is the width. </li>
-          </ul>
-          <p class="lead">
-            MODEL DEVELOPMENT AND EVALUATION
-          </p>
-          <p>
-            The finalized dataset of the COVID-19 Radiography Dataset from Qatar University, Doha was imported into
-            Jupyter Notebook.
-            After conducting Data Pre-Processing a custom dataset was created to associate the transformed image with
-            the respective classes as 'normal', 'viral', 'covid'.
-            The dataset was then divided into 2 sets namely Training and Test as per 70:30 split, i.e., 70% Training
-            data (10,607 images) and 30% Test data (4,546 Images).
-          </p>
-          <p>
-            The batch size was defined and the data loader was coded combined actual labels with transformed images into
-            singular train and test datasets and prepared data loader according to batch size with shuffling enabled.
-          </p>
-          <p>
-            A function called show_images function was defined and the ResNet18 Model was imported from PyTorch Library.
-            The defined show_images function plotted images in a grid with labels - Actual labels were shown on the
-            x-axis in black
-            font color and the predicted value label was shown on the y-axis in green font color in green if correctly
-            predicted else in red font color.
-          </p>
-          <p>
-            A function called show_preds function was defined. The show_preds function got images and labels from each
-            batch stored in the previously created data-loader dataset.
-            Then the image was passed as an input to the resnet-18 model (after training) and the predicted output was
-            stored. Finally, the show_images function was called to show the image, actual label, and predicted label.
-            To initiate the model training phase, the train function was defined and called
-          </p>
-          <p>
-            Post the training process, the trained model was exported as a .pth file. This model was then tested with a
-            sample image from outside the used dataset to ensure the model's functionality in an unbiased and accurate
-            manner.
-          </p>
+      <div class="d-sm-flex align-items-center justify-content-between">
+        <!-- row align-items-center justify-content-between
+        <div class="col-sm-12 col-md-4 col-lg-4"> 
+            <img class="img-fluid w-50 d-none d-sm-block" src="img/Sentiment analysis-amico.svg" alt="" />
         </div>
+        class="col-sm-12 col-md-8 col-lg-8 p-3" -->
+        <img class="img-fluid w-50 d-none d-sm-block" src="img/Data analysis-amico.svg" alt="" />
+        <div >
+          <h2>Deep Learning Models</h2>
+          <h4>CNN</h4>
+          <p>CNN can examine the hidden layers and contain interpretation in change attributes. 
+            They can learn which filter properties are most significant. 
+            Because we don't require as many parameters, we save time, trial and error labor. 
+            The primary distinction between a CNN and a traditional NN is that CNN employs convolutions to implement the arithmetic behind the scenes. 
+            Convolution is used in place of matrix multiplication in at slightest one layer. 
+            Convolutions take two input functions and output is one.
+          </p> 
+          <p>So, initially, the information is supplied into the CNN as preprocessed data, and then it is then passed through many layers. Henceforth, the pooling layer helps lower parameters in cases of enormous data size. 
+            The input is repeated for the convolution layer, where features are retrieved using various ways.
+          </p>
+          <h4>RNN</h4>
+          <p>RNN or LSTM is a class of neural nets that recall its bits of feedbacks because of an interior memory that includes groupings of information, for example, text, genomes, or mathematical time series information.
+            Recalling of past words to anticipate the following expression of the arrangement is very troublesome in a conventional neural organization yet in RNNs tackles this issue with the assistance of stowed away layers recall grouping data through time to create the yield. Each secret layer has its loads and sigmoid initiation work.
+            Repetitive neural organizations bargain as it were with transient conditions, though it can't deal with long conditions by disappearing slope issues during back engendering through time.
+          </p>          
+        </div>        
       </div>
     </div>
   </section>
+
+  <!-- Results try -->
+  <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active justify-content-center">
+        <img style="height: 50%; width: 50%;" src="img/ValidationLoss_img.PNG" >
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item justify-content-center">
+        <img style="height: 50%; width: 50%;" src="img/ValidationLoss_img.PNG">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item justify-content-center">
+        <img style="height: 50%; width: 50%;" src="img/ValidationLoss_img.PNG">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="news-slider" class="owl-carousel">
+          <div class="post-slide">
+            <div class="post-img">
+              <img src="https://images.unsplash.com/photo-1596265371388-43edbaadab94?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501" alt="">
+              <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+            </div>
+            <div class="post-content">
+              <h3 class="post-title">
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+              <a href="#" class="read-more">read more</a>
+            </div>
+          </div>
+          
+          <div class="post-slide">
+            <div class="post-img">
+              <img src="https://images.unsplash.com/photo-1533227268428-f9ed0900fb3b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=503" alt="">
+              <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+            </div>
+            <div class="post-content">
+              <h3 class="post-title">
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+              <a href="#" class="read-more">read more</a>
+            </div>
+          </div>
+          
+          <div class="post-slide">
+            <div class="post-img">
+              <img src="https://images.unsplash.com/photo-1564979268369-42032c5ca998?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=500" alt="">
+              <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+            </div>
+            <div class="post-content">
+              <h3 class="post-title">
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+              <a href="#" class="read-more">read more</a>
+            </div>
+          </div>
+          
+          <div class="post-slide">
+            <div class="post-img">
+              <img src="https://images.unsplash.com/photo-1576659531892-0f4991fca82b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501" alt="">
+              <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+            </div>
+            <div class="post-content">
+              <h3 class="post-title">
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+              <a href="#" class="read-more">read more</a>
+            </div>
+          </div>
+          
+          <div class="post-slide">
+            <div class="post-img">
+              <img src="https://images.unsplash.com/photo-1586083702768-190ae093d34d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=305&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=505" alt="">
+              <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+            </div>
+            <div class="post-content">
+              <h3 class="post-title">
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+              <a href="#" class="read-more">read more</a>
+            </div>
+          </div>
+  
+          <div class="post-slide">
+            <div class="post-img">
+              <img src="https://images.unsplash.com/photo-1484656551321-a1161420a2a0?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=306&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=506" alt="">
+              <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+            </div>
+            <div class="post-content">
+              <h3 class="post-title">
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+              <a href="#" class="read-more">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
 
   <!-- Results -->
   <section id="results" class="p-5 bg-light text-dark">
