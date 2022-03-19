@@ -11,12 +11,11 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="style.css" />
+  <!-- <link rel="stylesheet" href="style.css" /> -->
   <link rel="stylesheet" href="aboutStyle.css" />
   <title>About Page</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="index.js"></script>
-  <!-- <script src="onlyAbout.js"></script> -->
 </head>
 
 <body>
@@ -35,7 +34,10 @@
             <a href="#intro" class="nav-link">Introduction</a>
           </li>
           <li class="nav-item">
-            <a href="#methodology" class="nav-link">Methodology</a>
+            <a href="#data" class="nav-link">Methodology</a>
+          </li>
+          <li class="nav-item">
+            <a href="#methodology" class="nav-link">Models</a>
           </li>
           <li class="nav-item">
             <a href="#results" class="nav-link">Results</a>
@@ -49,13 +51,7 @@
   <section id="intro" class="p-5 text-white">
     <div class="container">
       <div class="d-sm-flex align-items-center justify-content-between">
-        <!-- row align-items-center justify-content-between
-        <div class="col-sm-12 col-md-4 col-lg-4"> 
-            <img class="img-fluid w-50 d-none d-sm-block" src="img/Sentiment analysis-amico.svg" alt="" />
-        </div>
-        class="col-sm-12 col-md-8 col-lg-8 p-3" -->
-        
-        <div >
+        <div>
           <h2>INTRODUCTION</h2>
           <p>Sentiment analysis refers to categorizing the emotions articulated in the extracted data. 
             It is used to mine opinions of the population at large and judge the flow of public opinion. 
@@ -172,7 +168,7 @@
             The input is repeated for the convolution layer, where features are retrieved using various ways.
           </p>
           <h4>RNN</h4>
-          <p>RNN or LSTM is a class of neural nets that recall its bits of feedbacks because of an interior memory that includes groupings of information, for example, text, genomes, or mathematical time series information.
+          <p>RNN-LSTM is a class of neural nets that recall its bits of feedbacks because of an interior memory that includes groupings of information, for example, text, genomes, or mathematical time series information.
             Recalling of past words to anticipate the following expression of the arrangement is very troublesome in a conventional neural organization yet in RNNs tackles this issue with the assistance of stowed away layers recall grouping data through time to create the yield. Each secret layer has its loads and sigmoid initiation work.
             Repetitive neural organizations bargain as it were with transient conditions, though it can't deal with long conditions by disappearing slope issues during back engendering through time.
           </p>          
@@ -181,164 +177,23 @@
     </div>
   </section>
 
-  <!-- Results try -->
-  <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active justify-content-center">
-        <img style="height: 50%; width: 50%;" src="img/ValidationLoss_img.PNG" >
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item justify-content-center">
-        <img style="height: 50%; width: 50%;" src="img/ValidationLoss_img.PNG">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item justify-content-center">
-        <img style="height: 50%; width: 50%;" src="img/ValidationLoss_img.PNG">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div> -->
-  <!-- <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-        <div id="news-slider" class="owl-carousel">
-          <div class="post-slide">
-            <div class="post-img">
-              <img src="https://images.unsplash.com/photo-1596265371388-43edbaadab94?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501" alt="">
-              <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
-            </div>
-            <div class="post-content">
-              <h3 class="post-title">
-                <a href="#">Lorem ipsum dolor sit amet.</a>
-              </h3>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
-              <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
-              <a href="#" class="read-more">read more</a>
-            </div>
-          </div>
-          
-          <div class="post-slide">
-            <div class="post-img">
-              <img src="https://images.unsplash.com/photo-1533227268428-f9ed0900fb3b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=503" alt="">
-              <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
-            </div>
-            <div class="post-content">
-              <h3 class="post-title">
-                <a href="#">Lorem ipsum dolor sit amet.</a>
-              </h3>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
-              <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
-              <a href="#" class="read-more">read more</a>
-            </div>
-          </div>
-          
-          <div class="post-slide">
-            <div class="post-img">
-              <img src="https://images.unsplash.com/photo-1564979268369-42032c5ca998?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=500" alt="">
-              <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
-            </div>
-            <div class="post-content">
-              <h3 class="post-title">
-                <a href="#">Lorem ipsum dolor sit amet.</a>
-              </h3>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
-              <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
-              <a href="#" class="read-more">read more</a>
-            </div>
-          </div>
-          
-          <div class="post-slide">
-            <div class="post-img">
-              <img src="https://images.unsplash.com/photo-1576659531892-0f4991fca82b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501" alt="">
-              <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
-            </div>
-            <div class="post-content">
-              <h3 class="post-title">
-                <a href="#">Lorem ipsum dolor sit amet.</a>
-              </h3>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
-              <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
-              <a href="#" class="read-more">read more</a>
-            </div>
-          </div>
-          
-          <div class="post-slide">
-            <div class="post-img">
-              <img src="https://images.unsplash.com/photo-1586083702768-190ae093d34d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=305&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=505" alt="">
-              <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
-            </div>
-            <div class="post-content">
-              <h3 class="post-title">
-                <a href="#">Lorem ipsum dolor sit amet.</a>
-              </h3>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
-              <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
-              <a href="#" class="read-more">read more</a>
-            </div>
-          </div>
-  
-          <div class="post-slide">
-            <div class="post-img">
-              <img src="https://images.unsplash.com/photo-1484656551321-a1161420a2a0?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=306&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=506" alt="">
-              <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
-            </div>
-            <div class="post-content">
-              <h3 class="post-title">
-                <a href="#">Lorem ipsum dolor sit amet.</a>
-              </h3>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
-              <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
-              <a href="#" class="read-more">read more</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-  
-  
-
+   
   <!-- Results -->
   <section id="results" class="p-5 text-white">
-    <div class="container" >
-      <h2>RESULTS & OBSERVATIONS</h2>
+    <div class="container  text-center" >
+      <h2 class="display-4">RESULTS & OBSERVATIONS</h2>
       <div class="row text-center justify-content-between mt-5">
-        <div class="col-lg-6 p-2">
+        <div class="col-lg-4">
           <img style="height: 100%; width: 100%;" src="img/rnn-acc.png">
         </div>
-        <div class="col-lg-6 p-2">
+        <div class="col-lg-4">
           <img style="height: 100%; width: 100%;" src="img/rnn-heatmap.png">
+        </div>
+        <div class="col-lg-4">
+          <img style="height: 100%; width: 100%;" src="img/chart_png.png">
         </div>
         
       </div>
-      <h3 class="text-center justify-content-between">
-        RNN
-      </h3>
     </div>    
   </section>
 
@@ -346,57 +201,52 @@
     <footer class="section bg-footer position-relative">
       <div class="container">
         <div class="row">
-          <div class="col-3">
+          <div class="col-sm-6 col-md-3 col-lg-3">
             <div class="">
               <h6 class="footer-heading text-uppercase text-white">Home</h6>
               <ul class="list-unstyled footer-link mt-4">
-                <li><a href="">Pages</a></li>
-                <li><a href="">Our Team</a></li>
-                <li><a href="">Feuchers</a></li>
-                <li><a href="">Pricing</a></li>
+                <li><a href="index.html#stats">Live Stats</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#carouselExampleIndicators">Live Tweets</a></li>
+                <li><a href="index.html#developers">Our Team</a></li>
+                <li><a href="index.html#faq">FAQs</a></li>
               </ul>
             </div>
           </div>
   
-          <div class="col-3">
+          <div class="col-sm-6 col-md-3 col-lg-3">
             <div class="">
               <h6 class="footer-heading text-uppercase text-white">About</h6>
               <ul class="list-unstyled footer-link mt-4">
-                <li><a href="">Monitoring Grader </a></li>
-                <li><a href="">Video Tutorial</a></li>
-                <li><a href="">Term &amp; Service</a></li>
-                <li><a href="">Zeeko API</a></li>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#data">Methodology</a></li>
+                <li><a href="#methodology">Models</a></li>
+                <li><a href="#results">Results</a></li>
               </ul>
             </div>
           </div>
   
-          <div class="col-3">
+          <div class="col-sm-6 col-md-3 col-lg-3">
             <div class="">
-              <h6 class="footer-heading text-uppercase text-white">Model</h6>
-              <ul class="list-unstyled footer-link mt-4">
-                <li><a href="">Sign Up </a></li>
-                <li><a href="">Login</a></li>
-                <li><a href="">Terms of Services</a></li>
-                <li><a href="">Privacy Policy</a></li>
-              </ul>
+                <h6 class="footer-heading text-uppercase text-white">Model</h6>
+                <ul class="list-unstyled footer-link mt-4">
+                    <li><a href="predict.html">Predict</a></li>
+                    <li><a href="predict.html#steps">Process</a></li>
+                    <li><a href="predict.html#tutorial">Tutorial</a></li>
+                </ul>
             </div>
-          </div>
+        </div>
   
-          <div class="col-3">
+          <div class="col-sm-6 col-md-3 col-lg-3">
             <div class="">
-              <h6 class="footer-heading text-uppercase text-white">Contact Us</h6>
-              <p class="contact-info mt-4">Contact us if need help withanything</p>
-              <p class="contact-info">+01 123-456-7890</p>
+              <h6 class="footer-heading text-uppercase text-white">Socials</h6>
+              <p class="contact-info mt-4">For queries on Sentimental Analysis and its implementation.</p>
               <div class="mt-5">
                 <ul class="list-inline">
-                  <li class="list-inline-item"><a href="#"><i
-                        class="fab linkedin footer-social-icon fa-linkedin-in"></i></i></a></li>
-                  <li class="list-inline-item"><a href="#"><i
-                        class="fab twitter footer-social-icon fa-twitter"></i></i></a></li>
-                  <li class="list-inline-item"><a href="#"><i class="fab google footer-social-icon fa-google"></i></i></a>
-                  </li>
-                  <li class="list-inline-item"><a href="#"><i class="fab github footer-social-icon fa-github"></i></i></a>
-                  </li>
+                  <li class="list-inline-item"><a href="https://www.linkedin.com/in/shefali-bansal-0084851b4/" target="_blank"><i class="fab linkedin footer-social-icon fa-linkedin-in"></i></i></a></li>
+                  <li class="list-inline-item"><a href="https://twitter.com/Shefali52813193" target="_blank"><i class="fab twitter footer-social-icon fa-twitter"></i></i></a></li>
+                  <li class="list-inline-item"><a href="mailto: shefali.bansal2008@google.com" target="_blank"><i class="fab google footer-social-icon fa-google"></i></i></a></li>
+                  <li class="list-inline-item"><a href="https://github.com/BansalShefali/" target="_blank"><i class="fab github footer-social-icon fa-github"></i></i></a></li>
                 </ul>
               </div>
             </div>

@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="twitter:dnt" content="on" />
-  <!-- =======================Fontaswome================ -->
   <script src="https://kit.fontawesome.com/f6c4fb9568.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
@@ -34,6 +33,9 @@
           </li>
           <li class="nav-item">
             <a href="#stats" class="nav-link">Live Stats</a>
+          </li>
+          <li class="nav-item">
+            <a href="#features" class="nav-link">Features</a>
           </li>
           <li class="nav-item">
             <a href="#abt-project" class="nav-link">About</a>
@@ -66,15 +68,16 @@
       <div class="container">
         <div class="d-sm-flex align-items-center justify-content-between">
           <div>
-            <h1>COVID-19 Prediction <span class="text-warning">just became EASIER!! </span></h1>
+            <h1>Sentiment Analysis <span class="span-text">using Deep Learning models.</span></h1>
             <p class="lead my-4">
-              Get your chest X-Ray predicted in matter of seconds with our advanced ResNet-18 Model!
+              Extract relevant emotion for your tweet or input text through our implementation.
+              The model is a product of Neural Networks trained on Tensorflow and PyTorch frameworks.
             </p>
-            <a href="predict.html" class="btn btn-primary btn-lg">
-              Predict Now
+            <a href="predict.html" class="btn text-white btn-lg">
+              Predict with Model
             </a>
           </div>
-          <img class="img-fluid w-50 d-none d-sm-block" src="img/undraw_medical.svg" alt="" />           
+          <img class="img-fluid w-50 d-none d-sm-block" src="img/Sentiment analysis-bro.svg" alt="" />           
         </div>
       </div>
     </div>
@@ -136,29 +139,100 @@
     </div>
   </section>
 
+  <!-- Features -->
+  <section id="features" class="feature-section img-fluid">
+    <div class="container">
+      <div class="main-section categories-view1-full">
+        <!-- <span class="light-transparent"></span> -->
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12 col-md-12">
+                    
+                    <!-- FancyTitle -->
+                    <div class="fancy-title-view1 fancy-title-view1-color">
+                        <h2>Features</h2>
+                        <p>This section underlines the languages and technologies used for our project.</p>
+                    </div>
+                    <!-- FancyTitle -->
+
+                    <!-- Categories List -->
+                    <div class="categories categories-view1">
+                        <ul class="row">
+                            <li class="col-md-4">
+                                <div class="categories-view1-wrap">
+                                  <i class="fa-brands fa-html5"></i>
+                                    <h5>HTML5</h5>
+                                    <small>For structure of website.</small>
+                                </div>
+                            </li>
+                            <li class="col-md-4">
+                                <div class="categories-view1-wrap">
+                                    <i class="fa-brands fa-css3"></i>
+                                    <h5>CSS3</h5>
+                                    <small>For design and animation.</small>
+                                </div>
+                            </li>
+                            <li class="col-md-4">
+                                <div class="categories-view1-wrap">
+                                    <i class="fa-brands fa-bootstrap"></i>
+                                    <h5>Bootstrap5</h5>
+                                    <small>For responsiveness.</small>
+                                </div>
+                            </li>
+                            <li class="col-md-4">
+                                <div class="categories-view1-wrap">
+                                    <i class="fa-brands fa-js-square"></i>
+                                    <h5>JS</h5>
+                                    <small>For programming logic.</small>
+                                </div>
+                            </li>
+                            <li class="col-md-4">
+                                <div class="categories-view1-wrap">
+                                  <i class="fa-solid fa-cube"></i>
+                                    <h5>Django</h5>
+                                    <small>For building app and connections.</small>
+                                </div>
+                            </li>
+                            <li class="col-md-4">
+                                <div class="categories-view1-wrap">
+                                    <i class="fa-brands fa-python"></i>
+                                    <h5>Python</h5>
+                                    <small>For prediction model.</small>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
 
   <!-- About Project -->
   <section id="abt-project" class="p-5">
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="col-md">
-          <img src="img/fundamentals.svg" class="img-fluid" alt="" />
+          <img class="img-fluid" src="img/Sentiment analysis-rafiki.svg" alt="" />
         </div>
         <div class="col-md p-5">
           <h2>About</h2>
           <p class="lead">
-            ResNet helps us to solve the degradation in performance which
-            occurs by adding additional layers by introducing the concept of
-            skip connections also known as shortcuts in between layers which
-            allow faster transfer between deep layers.
+            Sentiment analysis refers to categorizing the emotions articulated in the extracted data. In this project, Neural Network models (CNN, RNN-LSTM) are used to
+            predict the sentiment of Covid-19 Vaccination Tweets. 
           </p>
           <p>
-            In this project, a Residual Neural Network (ResNet-18) is used to
-            classify image samples of chest X-Ray data of patients having
-            COVID-19 pneumonia thereby detecting the existence of Coronavirus
-            in the patient.
+            Moreover, we have also introduced Federated Learning, a distributed, on-device learning framework for sentiment analysis. 
+            Federated Learning is a distributed ML approach that facilitates training on an extensive canon of 
+            decentralized text rooming on gadgets like smartphones.
           </p>
-          <a href="about.html" class="btn btn-light mt-3">
+          <a href="about.html" class="btn text-white mt-3">
             <i class="bi bi-chevron-right"></i> Read More
           </a>
         </div>
@@ -194,7 +268,7 @@
                 is conscious of the fact that it still has miles to go in pursuit
                 of scientific achievements as well as health targets.
               </p>
-              <a href="https://main.icmr.nic.in/" target="_blank" class="btn btn-primary mt-3">
+              <a href="https://main.icmr.nic.in/" target="_blank" class="btn text-white mt-3">
                 <i class="bi bi-chevron-right"></i>
                 Read More
               </a>
@@ -227,7 +301,7 @@
                 illness."
               </p>
               <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public"
-                target="_blank" class="btn btn-primary mt-3">
+                target="_blank" class="btn text-white mt-3">
                 <i class="bi bi-chevron-right"></i> Read More
               </a>
             </div>
@@ -255,7 +329,7 @@
   <!-- Developer Cards -->
   <section id="developers">
     <div class="container text-center">
-    <h2 class="mb-5">Developers</h2>
+    <h2 class="mb-5">Our Team</h2>
       <div class="row align-items-center justify-content-center">
         <div class="col-sm-12 col-md-6">
           <div class="card">
@@ -330,80 +404,7 @@
     </div>
   </div>
 
-  <!-- Features -->
-  <section id="features" class="feature-section img-fluid">
-        <div class="container">
-          <div class="main-section categories-view1-full">
-            <span class="light-transparent"></span>
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-sm-12 col-md-12">
-                        
-                        <!-- FancyTitle -->
-                        <div class="fancy-title-view1 fancy-title-view1-color">
-                            <h2>Features</h2>
-                            <p>This section underlines the languages and technologies used for our project.</p>
-                        </div>
-                        <!-- FancyTitle -->
-
-                        <!-- Categories List -->
-                        <div class="categories categories-view1">
-                            <ul class="row">
-                                <li class="col-md-4">
-                                    <div class="categories-view1-wrap">
-                                      <i class="fa-brands fa-html5"></i>
-                                        <h5>HTML5</h5>
-                                        <small>For structure of website.</small>
-                                    </div>
-                                </li>
-                                <li class="col-md-4">
-                                    <div class="categories-view1-wrap">
-                                        <i class="fa-brands fa-css3"></i>
-                                        <h5>CSS3</h5>
-                                        <small>For design and animation.</small>
-                                    </div>
-                                </li>
-                                <li class="col-md-4">
-                                    <div class="categories-view1-wrap">
-                                        <i class="fa-brands fa-bootstrap"></i>
-                                        <h5>Bootstrap5</h5>
-                                        <small>For responsiveness.</small>
-                                    </div>
-                                </li>
-                                <li class="col-md-4">
-                                    <div class="categories-view1-wrap">
-                                        <i class="fa-brands fa-js-square"></i>
-                                        <h5>JS</h5>
-                                        <small>For programming logic.</small>
-                                    </div>
-                                </li>
-                                <li class="col-md-4">
-                                    <div class="categories-view1-wrap">
-                                      <i class="fa-solid fa-cube"></i>
-                                        <h5>Django</h5>
-                                        <small>For building app and connections.</small>
-                                    </div>
-                                </li>
-                                <li class="col-md-4">
-                                    <div class="categories-view1-wrap">
-                                        <i class="fa-brands fa-python"></i>
-                                        <h5>Python</h5>
-                                        <small>For prediction model.</small>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-
+  
   <!-- Question Accordion -->
   <section id="faq" class="p-5">
     <div class="container">
@@ -414,12 +415,12 @@
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#question-one">
-              What formats of images are accepted?
+              What inputs are acceptable?
             </button>
           </h2>
           <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
             <div class="accordion-body">
-              Images in the format of .png, .jpeg and .jpg are accepted.
+              You can type your input text or tweet. Or you can copy the same from your preferred source.
             </div>
           </div>
         </div>
@@ -428,18 +429,12 @@
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#question-two">
-              What is ResNet-18?
+              What is Sentiment Analysis?
             </button>
           </h2>
           <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
             <div class="accordion-body">
-              ResNet-18 is a convolutional neural network that is 18 layers
-              deep. You can load a pretrained version of the network trained
-              on more than a million images from the ImageNet database. The
-              pretrained network can classify images into 1000 object
-              categories, such as keyboard, mouse, pencil, and many animals.
-              As a result, the network has learned rich feature
-              representations for a wide range of images.
+              Sentiment analysis, also referred to as opinion mining, is an approach to natural language processing (NLP) that identifies the emotional tone behind a body of text.
             </div>
           </div>
         </div>
@@ -453,8 +448,8 @@
           </h2>
           <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
             <div class="accordion-body">
-              The model has been trained to an accuracy of 98.11% on a
-              database of approximately 15,000 images.
+              The model has been trained to an accuracy of 92.28% (RNN-LSTM) and 89.93 (CNN) on a
+              Kaggle database of approximately 190,000 tweets.
             </div>
           </div>
         </div>
@@ -468,7 +463,7 @@
           </h2>
           <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#questions">
             <div class="accordion-body">
-              No data is being stored in any kind of database.
+              Yes, your data is confidential. No data is being stored in any kind of database. Moreover, for federated learning aspect, we are trying to maximize the clients' privacy and confidentiality to their data.
             </div>
           </div>
         </div>
@@ -482,8 +477,8 @@
           </h2>
           <div id="question-five" class="accordion-collapse collapse" data-bs-parent="#questions">
             <div class="accordion-body">
-              It will take approximately a minute or two to display the resuls
-              on screen.
+              Your data is going through embedding and vectorisation before processing. It will take approximately a minute or two to display the results
+              on screen. Please be patient.
             </div>
           </div>
         </div>
@@ -500,10 +495,11 @@
           <div class="">
             <h6 class="footer-heading text-uppercase text-white">Home</h6>
             <ul class="list-unstyled footer-link mt-4">
-              <li><a href="">Pages</a></li>
-              <li><a href="">Our Team</a></li>
-              <li><a href="">Feuchers</a></li>
-              <li><a href="">Pricing</a></li>
+              <li><a href="#stats">Live Stats</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#carouselExampleIndicators">Live Tweets</a></li>
+              <li><a href="#developers">Our Team</a></li>
+              <li><a href="#faq">FAQs</a></li>
             </ul>
           </div>
         </div>
@@ -512,41 +508,35 @@
           <div class="">
             <h6 class="footer-heading text-uppercase text-white">About</h6>
             <ul class="list-unstyled footer-link mt-4">
-              <li><a href="">Monitoring Grader </a></li>
-              <li><a href="">Video Tutorial</a></li>
-              <li><a href="">Term &amp; Service</a></li>
-              <li><a href="">Zeeko API</a></li>
+              <li><a href="about.html#intro">Introduction</a></li>
+              <li><a href="about.html#data">Methodology</a></li>
+              <li><a href="about.html#methodology">Models</a></li>
+              <li><a href="about.html#results">Results</a></li>
             </ul>
           </div>
         </div>
 
         <div class="col-3">
           <div class="">
-            <h6 class="footer-heading text-uppercase text-white">Model</h6>
-            <ul class="list-unstyled footer-link mt-4">
-              <li><a href="">Sign Up </a></li>
-              <li><a href="">Login</a></li>
-              <li><a href="">Terms of Services</a></li>
-              <li><a href="">Privacy Policy</a></li>
-            </ul>
+              <h6 class="footer-heading text-uppercase text-white">Model</h6>
+              <ul class="list-unstyled footer-link mt-4">
+                  <li><a href="predict.html">Predict</a></li>
+                  <li><a href="predict.html#steps">Process</a></li>
+                  <li><a href="predict.html#tutorial">Tutorial</a></li>
+              </ul>
           </div>
-        </div>
+      </div>
 
         <div class="col-3">
           <div class="">
-            <h6 class="footer-heading text-uppercase text-white">Contact Us</h6>
-            <p class="contact-info mt-4">Contact us if need help withanything</p>
-            <p class="contact-info">+01 123-456-7890</p>
+            <h6 class="footer-heading text-uppercase text-white">Socials</h6>
+            <p class="contact-info mt-4">For queries on Sentimental Analysis and its implementation.</p>
             <div class="mt-5">
               <ul class="list-inline">
-                <li class="list-inline-item"><a href="#"><i
-                      class="fab linkedin footer-social-icon fa-linkedin-in"></i></i></a></li>
-                <li class="list-inline-item"><a href="#"><i
-                      class="fab twitter footer-social-icon fa-twitter"></i></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fab google footer-social-icon fa-google"></i></i></a>
-                </li>
-                <li class="list-inline-item"><a href="#"><i class="fab github footer-social-icon fa-github"></i></i></a>
-                </li>
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/shefali-bansal-0084851b4/" target="_blank"><i class="fab linkedin footer-social-icon fa-linkedin-in"></i></i></a></li>
+                <li class="list-inline-item"><a href="https://twitter.com/Shefali52813193" target="_blank"><i class="fab twitter footer-social-icon fa-twitter"></i></i></a></li>
+                <li class="list-inline-item"><a href="mailto: shefali.bansal2008@google.com" target="_blank"><i class="fab google footer-social-icon fa-google"></i></i></a></li>
+                <li class="list-inline-item"><a href="https://github.com/BansalShefali/" target="_blank"><i class="fab github footer-social-icon fa-github"></i></i></a></li>
               </ul>
             </div>
           </div>
